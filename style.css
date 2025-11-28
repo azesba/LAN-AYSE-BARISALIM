@@ -17,6 +17,8 @@ body {
     border-radius: 15px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     max-width: 90%; 
+    position: relative; /* Z-index için gerekli */
+    z-index: 2; /* Main içeriğin önde kalmasını sağlar */
 }
 
 h1 {
@@ -53,6 +55,7 @@ button {
     background-color: #f44336; 
     color: white;
     transition: top 0.4s ease-out, left 0.4s ease-out; 
+    z-index: 10; /* Kaçan butonu her zaman en üstte tutar */
 }
 
 @media (max-width: 600px) {
